@@ -43,6 +43,8 @@ function initializeGame() {
                 setTimeout(() => {
                     computerMove();
                     if (checkWinner('O')) {
+                        showYouLose();
+                    } else if (checkTie()) {
                         showTryAgain();
                     }
                 }, 500);
@@ -134,17 +136,21 @@ function initializeGame() {
         const winner = checkWinner('X');
         if (winner) {
             setTimeout(() => {
-                
-             window.location.href = 'winner.html'; // Redirect to winner page
+                window.location.href = 'winner.html'; // Redirect to winner page
             }, 10);
         }
     }
-    
-    
 
     function showTryAgain() {
         setTimeout(() => {
-            alert("You loses now call me and say 'I LOVE YOU'");
+            alert("It's a draw!You are smarter then i thought");
+            resetGame();
+        }, 10);
+    }
+
+    function showYouLose() {
+        setTimeout(() => {
+            alert("You lose! Now call me and say 'I LOVE YOU");
             resetGame();
         }, 10);
     }
