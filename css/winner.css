@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-image:url("heart.gif"),url("heart2.gif"); */
+  
+  
+    
+   /* background-color: #fde1e1;  Light pink background */
+}
+/* Additional styles for the winner page */
+.winner-box {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 400px;
+    width: 90%;
+    margin: 50px auto;
+    z-index: 1;
+   margin-top: 30%;
+}
+.i{
+    height: 30%;
+    width: 20%;
+  }
+h1 {
+    color: #e44d4d; /* Dark pink color */
+    z-index: 1;
+}
+
+.winner-image {
+    max-width:90%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#playAgainButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e44d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*2024 valentines day update*/
+.winner-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.heart-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px); /* Adjust the size as needed */
+  gap: 280px;
+  position: absolute;
+  top: 47%;
+  right: -150px; /* Adjust the distance from the winner-box */
+  transform: translateY(-50%);
+}
+
+.hear {
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  background-image: url('');
+  background-repeat: repeat;
+  background-size: contain; /* Ensure the heart.png fits the container */
+}
+
+@media only screen and (max-width: 600px){
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  background-size:auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: -50%;
+}
+
+.i {
+  height: auto; /* Allow image height to adjust */
+  width: 30%; /* Image width to occupy full screen width */
+margin: 10%;
+}
+
+.winner-box {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-width: 600px;
+  width: 90%;
+  margin: 50px auto;
+  z-index: 1;
+ margin-top: 18rem;
+ margin-left: 40%;
+}
+
+h1 {
+  font-size: 1.5rem; /* Decrease font size for better mobile display */
+}
+
+
+
+.heart-grid {
+  grid-template-columns: repeat(3, 80px); /* Adjust grid size for smaller screens */
+  gap: 120px; /* Adjust gap for smaller screens */
+  right: -50px; /* Adjust position from the right for smaller screens */
+}
+
+.hear {
+  width: 5px; /* Adjust heart size for smaller screens */
+  height: 3%; /* Adjust heart size for smaller screens */
+  top: 0; /* Adjust position from the top for smaller screens */
+ 
+}
+
+}
